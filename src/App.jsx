@@ -70,13 +70,21 @@ export default function App() {
 
 // Return information about each learner
 return (
-  <main>
+  <main className="app-container">
+    {/* This is the main title for our application */}
     <h1>Rendering Arrays in React</h1>
-    <p>Total learners: {learnerData.learners.length}</p>
 
+    {/* This displays how many learners are stored in state */}
+    <p className="learner-count">
+      Total learners: {learnerData.learners.length}
+    </p>
+
+    {/* We create one Learner component for every learner in the array */}
     {learnerData.learners.map((learner) => (
-      <Learner key={learner.name} learner={learner} />
+      <Learner
+        key={learner.name}
+        learner={learner}
+      />
     ))}
   </main>
-)
-}
+)}

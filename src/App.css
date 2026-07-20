@@ -1,0 +1,62 @@
+/* Background page and font setup */
+body {
+  margin: 0;
+  background-color: lightblue;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* This keeps the application centered and prevents it from becoming too wide */
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* This centers the main page heading */
+.app-container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* This styles the learner count underneath the heading */
+.learner-count {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Each learner is displayed inside their own card */
+.learner-card {
+  margin-bottom: 25px;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/* This adds space between the biography lines */
+.learner-bio {
+  line-height: 1.6;
+}
+
+/* The scores will display next to each other when enough space is available */
+.score-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Each individual score has its own smaller card */
+.score-card {
+  min-width: 150px;
+  padding: 12px;
+  background-color: lightgray;
+  border-radius: 8px;
+}
+
+/* This removes extra spacing inside the score cards */
+.score-card p {
+  margin: 5px 0;
+}
