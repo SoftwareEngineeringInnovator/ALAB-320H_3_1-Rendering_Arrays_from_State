@@ -1,7 +1,9 @@
+// Imports that assist on the page rendering
 import { useState } from 'react'
 import Learner from './Learner'
 import './App.css'
 
+// Learner information
 export default function App() {
   const [learnerData] = useState({
     learners: [
