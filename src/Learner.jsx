@@ -1,3 +1,4 @@
+// Learner function to display Learner name and bio
 export default function Learner({ learner }) {
   return (
     <section>

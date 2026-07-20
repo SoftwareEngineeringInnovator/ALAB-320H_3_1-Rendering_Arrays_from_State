@@ -66,6 +66,7 @@ export default function App() {
     ],
   })
 
+// Return information about each learner
 return (
   <main>
     <h1>Rendering Arrays in React</h1>
